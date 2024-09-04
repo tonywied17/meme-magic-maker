@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function ()
     });
 
     // Fetch and display links.json (This should be fetched remotely rather than local in the extension)
-    fetch(chrome.runtime.getURL('links.json'))
+    fetch(chrome.runtime.getURL('example_cfg/links.json'))
         .then((response) => response.json())
         .then((links) =>
         {
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function ()
         });
 
     // Fetch and display passwords.json (This should be fetched remotely rather than local in the extension)
-    fetch(chrome.runtime.getURL('passwords.json'))
+    fetch(chrome.runtime.getURL('example_cfg/passwords.json'))
         .then((response) => response.json())
         .then((passwords) =>
         {
